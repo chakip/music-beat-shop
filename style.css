@@ -1,0 +1,207 @@
+body
+{
+    background-attachment: fixed;
+    background-image: url(img/instrument.jpg);
+    color: white;
+    margin: 0 !important;
+    font-family: 'Gotu', sans-serif;
+}
+
+#logo, #nav, #content, #information, ul
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo
+{
+    text-align: center;
+    font-size: 48px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(145, 28, 28);
+}
+
+#picture
+{
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background-size: cover;
+    border-bottom: 2px rgb(36, 35, 35) solid;
+    background-image: url(img/instrument.jpg);
+}
+
+#nav
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(145, 28, 28);
+    border-bottom: 2px rgb(99, 20, 20) solid;
+}
+
+ul
+{
+    margin: 0 !important;
+    list-style-type: none;
+}
+
+ul > li
+{
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 15px;
+    text-align: center;
+    width: 16%;
+    float: left;
+    margin: 5px;
+    background-color: rgba(65, 5, 5, 0.514);
+    color: rgb(212, 101, 101);
+    font-weight: 900;
+    border-bottom: 2px rgb(212, 101, 101) solid;
+}
+
+ul > li:hover
+{
+    border-bottom: 2px rgb(247, 204, 15) solid;
+    color: rgb(247, 204, 15);
+    cursor: pointer;
+    text-decoration: line-through solid red 2px;
+}
+
+.focus
+{
+    color: rgb(247, 204, 15);
+    border: 2px rgb(247, 204, 15) solid;
+}
+
+#content
+{
+    background-color: rgb(36, 35, 35);
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+#footer
+{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: rgb(36, 35, 35);
+}
+
+#information
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(36, 35, 35);
+    text-align: center;
+    width: 40%;
+    padding: 15px;
+    font-size: 22px;
+}
+
+.product
+{
+    
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    margin: 30px;
+    padding: 15px;
+    text-align: center;
+    width: 18%;
+    float: left;
+    color: black;
+}
+
+.image
+{
+    width: 90%;
+    margin: 5%;
+    overflow: hidden;
+    transition: transform .6s cubic-bezier(0.29,-0.17, 0.27, 1.55);
+}
+
+.image:hover
+{
+    transform: scale(1.2);
+}
+
+.product:hover
+{
+    cursor: pointer;
+}
+
+.prize
+{
+    color: rgb(10, 207, 10);
+}
+
+
+/**************MOBILE******************/
+
+
+@media only screen and (max-width: 800px)
+{
+    
+    #picture 
+    {
+        display: none;
+    }
+
+    #information
+    {
+        width: 80%;
+    }
+
+    .item
+    {
+        width: 40%;
+        clear: both;
+        margin-left: 25%;
+        margin-right: 35%;
+        
+    }
+
+}
+
+@media only screen and (max-width: 1348px)
+{
+
+    .product
+    {
+        width: 40%;
+        margin-left: 25%;
+        margin-right: 35%;
+        float: left;
+    }
+
+    #information
+    {
+        width: 60%;
+    }
+
+    .item
+    {
+        width: 30%;
+        clear: both;
+        margin-left: 30%;
+        margin-right: 40%;
+        
+    }
+
+    
+
+    .two
+    {
+        float: left;
+    }
+
+    .clear
+    {
+        clear: both;
+    }
+
+}
